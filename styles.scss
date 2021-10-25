@@ -1,0 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Roboto&display=swap");
+
+$default-font: 27px "Roboto", sans-serif;
+$white-background: #e5e5e5;
+$black-background: #100e14;
+$bold-logo: 40px "Lobster", sans-serif;
+$white: #ffffff;
+$white-transparent7: rgba(255, 255, 255, 0.7);
+$white-transparent5: rgba(255, 255, 255, 0.5);
+$my-red: #ff4343;
+$my-red-hover: #c91919;
+
+*,
+*:after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: $default-font;
+  background-color: $white-background;
+}
+
+.header {
+  height: 90px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  .menu {
+    gap: 90px;
+  }
+  &__item {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    width: max-content;
+    .menu__logo {
+      cursor: pointer;
+      font: $bold-logo;
+    }
+    .menu__list {
+      display: flex;
+      gap: 50px;
+      list-style: none;
+      .menu__item {
+        &:hover {
+          cursor: pointer;
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+header,
+footer {
+  flex-shrink: 0;
+}
+
+main {
+  flex-grow: 1;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: 75px;
+  background-color: $black-background;
+  section {
+    display: flex;
+    align-items: center;
+  }
+  .block1 {
+    position: relative;
+    flex-direction: column;
+    h1 {
+      margin-bottom: 10px;
+    }
+    h4 {
+      color: $white-transparent7;
+    }
+    button {
+      background-color: $my-red;
+      border: 0;
+      cursor: pointer;
+      font-size: 21px;
+      color: $white;
+      width: 231px;
+      height: 66px;
+      border-radius: 7px;
+      margin-top: 35px;
+      transition: all 1s ease;
+      &:hover {
+        background-color: $my-red-hover;
+        transition: all 1s ease;
+      }
+    }
+    p {
+      font-size: 14px;
+    }
+    .phone {
+      position: absolute;
+      bottom: -20px;
+      right: 200px;
+    }
+  }
+  .block2 {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    &__textblock {
+      width: 300px;
+      h1 {
+        font-size: 38px;
+        line-height: 50px;
+      }
+      h3 {
+        font-size: 26px;
+        color: $white-transparent5;
+      }
+    }
+    &__imagesblock {
+      position: relative;
+      margin-left: -260px;
+      .background-img {
+        z-index: -1;
+        transform: rotate(-20deg);
+      }
+      .front-img {
+        z-index: 10;
+        position: absolute;
+        left: 310px;
+      }
+    }
+  }
+}
