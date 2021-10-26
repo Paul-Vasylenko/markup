@@ -190,4 +190,136 @@ main .block2__imagesblock .front-img {
   position: absolute;
   left: 310px;
 }
+
+main .block3,
+main .block4,
+main .block5 {
+  margin-top: 40px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 130px;
+}
+
+main .block3__textblock,
+main .block4__textblock,
+main .block5__textblock {
+  width: 400px;
+  letter-spacing: 1.08px;
+}
+
+main .block3__textblock h1,
+main .block4__textblock h1,
+main .block5__textblock h1 {
+  font-size: 58px;
+  margin-bottom: 10px;
+}
+
+main .block3__textblock h5,
+main .block4__textblock h5,
+main .block5__textblock h5 {
+  font-size: 27px;
+  margin-top: 10px;
+  color: rgba(255, 255, 255, 0.5);
+  width: 450px;
+}
+
+main .block3__textblock h5 span,
+main .block4__textblock h5 span,
+main .block5__textblock h5 span {
+  color: #ffffff;
+}
+
+main .block4__textblock {
+  width: 500px;
+}
+
+main .block4__textblock h1 {
+  font-size: 54px;
+}
+
+main .block5__textblock {
+  width: 500px;
+}
+
+main .block6 {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 30px;
+  text-align: center;
+}
+
+main .block6 h1 {
+  width: 475px;
+  font-size: 61px;
+}
+
+main .block6 .red-line {
+  width: 120px;
+  height: 5px;
+  background-color: #ff4343;
+}
+
+main .block6 h3 {
+  width: 600px;
+  font-size: 26px;
+  color: rgba(255, 255, 255, 0.5);
+  letter-spacing: 0.42px;
+  line-height: 38px;
+}
+
+main .block6 .people-preview {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 16px;
+  height: 452px;
+  width: 250px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  margin-left: 20px;
+}
+
+main .block6 .people-preview__item {
+  position: relative;
+  position: relative;
+}
+
+main .block6 .people-preview__item .background {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(255, 255, 255, 0)), to(rgba(0, 0, 0, 0.8)));
+  background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(0, 0, 0, 0.8));
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+main .block6 .people-preview__item__bigtext {
+  position: absolute;
+  bottom: 80px;
+  font-weight: 100;
+  width: 100%;
+}
+
+main .block6 .people-preview__item__name {
+  position: absolute;
+  bottom: 60px;
+  font-weight: 100;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
+
+main .block6 .people-preview__item__work {
+  position: absolute;
+  bottom: 20px;
+  color: rgba(255, 255, 255, 0.5);
+  font-weight: 100;
+  font-size: 16px;
+  width: 100%;
+  text-align: center;
+}
 /*# sourceMappingURL=styles.css.map */
