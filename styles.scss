@@ -557,7 +557,7 @@ footer {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 468px) {
   main {
     .block2 {
       &__textblock {
@@ -687,25 +687,24 @@ footer {
       }
     }
   }
-}
-
-footer {
-  padding-bottom: 20px;
-  flex-direction: column;
-  align-items: center;
-  .logo {
-    margin-left: -20px;
-  }
-  .links {
+  footer {
+    padding-bottom: 20px;
     flex-direction: column;
-    .link__col {
-      padding: 40px 0;
-      ul {
-        margin-top: 0;
+    align-items: center;
+    .logo {
+      margin-left: -20px;
+    }
+    .links {
+      flex-direction: column;
+      .link__col {
+        padding: 40px 0;
+        ul {
+          margin-top: 0;
+        }
       }
     }
-  }
-  .socials {
-    align-self: flex-end;
+    .socials {
+      align-self: flex-end;
+    }
   }
 }
