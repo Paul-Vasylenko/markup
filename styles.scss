@@ -615,6 +615,9 @@ footer {
         width: 330px;
         font-size: 42px;
       }
+      h3 {
+        width: 385px;
+      }
     }
     .block7 {
       &__header {
@@ -676,7 +679,6 @@ footer {
           height: auto;
           .info-block {
             a {
-              top: 0;
               left: -210px;
             }
             padding: 10px 12px;
@@ -684,5 +686,25 @@ footer {
         }
       }
     }
+  }
+}
+
+footer {
+  flex-direction: column;
+  align-items: center;
+  .logo {
+    margin-left: -20px;
+  }
+  .links {
+    flex-direction: column;
+    .link__col {
+      padding: 40px 0;
+      ul {
+        margin-top: 0;
+      }
+    }
+  }
+  .socials {
+    align-self: flex-end;
   }
 }
